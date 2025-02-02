@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ecommerce Website</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<style>
+		
+		@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'spartan', sans-serif;
+}
+
+h1{
+	font-size: 50px;
+	line-height: 64px;
+	color: #222;
+}
+
+h2{
+	font-size: 46px;
+	line-height: 54px;
+	color: #222;
+}
+
+h4{
+	font-size: 20px;
+	color: #222;
+}
+
+h6{
+	font-weight: 700;
+	font-size: 12px;
+}
+
+p{
+	font-size: 16px;
+	color: #465b52;
+	margin: 15px 0 20px 0;
+}
+
+.section-p1{
+	padding: 40px 80px;
+}
+
+.section-m1{
+	margin: 40px 0;
+}
+
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+body{
+	width: 100%;
+}
+
+
+
+/* Header Start */
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #e3e6f3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.hover {
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+
+
+/* Home page */
+
+#hero{
+	
+	height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+}
+
+.section-container {
+            display: flex; /* Display children side by side */
+            align-items: center; /* Vertically align children */
+            padding: 20px; /* Add spacing around the section */
+        }
+
+        /* Style for the heading on the left */
+        .section-heading {
+            flex: 1; /* Take up as much space as possible */
+            padding: 10px; /* Add spacing around the heading */
+            font-size: 20px; /* Adjust the font size */
+            font-weight: ; /* Make the text bold */
+        }
+
+        /* Style for the photo on the right */
+        .section-photo {
+            flex: 1; /* Take up as much space as possible */
+            padding: 10px; /* Add spacing around the photo */
+        }
+
+        /* Style for the image (optional) */
+        .section-photo img {
+            max-width: 120%; /* Ensure the image doesn't exceed its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing around the image */
+        }
+
+*{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'work sans', sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+            background: hidden;
+        }
+
+        section{
+            padding: 80px 13% 70px;
+        }
+
+        #hero h4{
+        	padding-bottom: 15px;
+
+        }
+
+        #hero h1{
+        	color: #088178;
+        }
+
+      /* Style the button */
+.styled-button {
+    
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+/* Change button color on hover */
+.styled-button:hover {
+    background-color: orange;
+}
+
+#feature{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#feature .fe-box{
+	width: 180px;
+	text-align: center;
+	padding: 25px 15px;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+	border: 1px solid #cce7d0;
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+#feature .fe-box{
+	box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+	display: inline-block;
+	padding: 9px 8px 6px 8px;
+	line-height: 1;
+	border-radius: 4px;
+	color: #088178;
+	background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6{
+background-color: #fff2e5;
+}
+
+#product1{
+	text-align: center;
+}
+
+#product1 .pro-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+
+#product1 .pro{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #cce7d0;
+	border-radius: 25px;
+   cursor: pointer;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+   margin: 15px 0;
+   position: relative;
+}
+
+#product1 .pro:hover{
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);	
+}
+
+#product1 .pro img{
+	width: 100%;
+	border-radius: 20px;
+
+}
+
+#product1 .pro .des{
+	text-align: start;
+	padding: 10px 0;
+}
+
+#product1 .pro .des span{
+	color: #606063;
+	font-size: 12px;
+}
+
+#product1 .pro .des h5{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+
+#product1 .pro .des i{
+	font-size: 12px;
+	color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+	padding-top: 7px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #088178;
+}
+
+#product1 .pro .cart{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #e8f6ea;
+	font-weight: 500;
+	color: #088178;
+	border: 1px solid #cce7d0;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+
+
+
+
+.cta{
+          margin: 200px auto;
+          width: 90%;
+          background-color: skyblue;
+          background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(C:\Users\lenovo\Pictures\insurance-quote-form-background-fontana-ca.jpg);
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          text-align: center;
+          padding: 100px 0;
+       }
+
+       .cta h4{
+       	color: #fff;
+       }
+       .cta h2 {
+        color: #fff;
+        margin-bottom: 40px;
+        padding: 0;
+       }
+
+       .cta button:hover{
+       	background: #088178;
+       	color: #fff;
+       }
+
+       .offer{
+       	background: radial-gradient(#fff,#ffd6d6);
+       	margin-top: 80px;
+       	padding: 30px 0;
+       }
+
+
+ #colored-section {
+        background-color: lightgray;
+        height: 90%;
+    }
+
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #e3e6f3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.hover {
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	background-color: #041e42;
+}
+
+#newsletter h4{
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+}
+
+#newsletter p{
+	font-size: 14px;
+	font-weight: 600;
+	color: #818ea0;
+}
+
+#newsletter p span{
+	color: #ffbd27;
+}
+
+#newsletter .form{
+	display: flex;
+	width: 40%;
+}
+
+#newsletter input{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#newsletter button{
+	background-color: #088178;
+	color: #fff;
+	white-space: nowrap;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+footer .logo{
+	margin-bottom: 30px;
+}
+
+footer h4{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+footer p{
+	font-size: 13px;
+	margin: 0 0 8px 0;
+}
+
+footer a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+footer .follow{
+	margin-top: 20px;
+}
+
+footer .follow i{
+	color: #465b52;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+footer .install .row img{
+	border: 1px solid #088178;
+	border-radius: 6px;
+}
+       
+
+
+/* shop page */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pagination{
+	text-align: center;
+}
+
+#pagination a {
+	text-decoration: none;
+	background-color: #088178;
+	padding: 15px 20px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 600;
+}
+
+
+#pagination a i {
+font-size: 15px;
+font-weight: 600;
+
+}
+
+
+/* single product */
+
+#prodetails{
+	display: flex;
+	margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+	width: 40%;
+	margin-right: 50px;
+}
+
+.small-img-group{
+	display: flex;
+	justify-content: space-between;
+}
+
+.small-img-col{
+	flex-basis: 24%;
+	cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+	width: 50%;
+	padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+	padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+	font-size: 26px;
+} 
+
+#prodetails .single-pro-details select{
+	display: flex;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+	width: 50px;
+	height: 47px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+	outline: none;
+}
+
+#prodetails .single-pro-details button{
+	background: #088178;
+	color: #fff;
+}
+
+#prodetails .single-pro-details span{
+	line-height: 25px;
+}
+
+/* Blog page */
+
+
+
+/* About */
+
+
+
+/*contact page*/
+
+
+/*cart page */
+
+
+	</style>
+</head>
+<body>
+
+	<section id="header">
+		<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image.png11.png" width="100px" class="logo" alt=""></a>
+
+		<div>
+			<ul id="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="shop.html">Shop</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+				
+				
+			</ul>
+		</div>
+		
+	</section>
+
+
+	<section id="prodetails" class="section-p1">
+		<div class="single-pro-image">
+			<img src="C:\Users\Lenovo\Desktop\image\51+ZsUFyItL._AC_SY200_.jpg" width="100%" id="MainImg" alt="">
+			<div class="small-img-group">
+				<div class="small-img-col">
+					<img src="C:\Users\Lenovo\Desktop\image\51aGVzFxsFL._AC_SY200_.jpg" width="100%" class="small-img" alt="">
+				</div>
+				<div class="small-img-col">
+					<img src="C:\Users\Lenovo\Desktop\image\51hbBsUA3ZL._AC_SY200_.jpg" width="100%" class="small-img" alt="">
+				</div>
+				<div class="small-img-col">
+					<img src="C:\Users\Lenovo\Desktop\image\51I17M2sZJL._AC_SY200_.jpg" width="100%" class="small-img" alt="">
+				</div>
+				<div class="small-img-col">
+					<img src="C:\Users\Lenovo\Desktop\image\51JlSIZ7i8L._AC_SY200_.jpg" width="100%" class="small-img" alt="">
+				</div>
+			</div>
+			
+		</div>
+		<div class="single-pro-details">
+			<h6>Home / Book</h6>
+			<h4>More digital items to explore</h4>
+			<h2>$139.00</h2>
+			<button class="normal">Add to cart</button>
+			<h4>Product Details</h4>
+			<span>The Gilden Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort width each wear. </span>
+		</div>
+		
+	</section>
+
+	<section id="product1" class="section-p1">
+	<h2>Featured Products</h2>
+	<p>More digital items to explore</p>
+	<div class="pro-container">
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51nRSOvjSLL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>Jack (German Edition)</span>
+			<h5>Theodor Däubler</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$33.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+		<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51OknQVVTeL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>Day Trading for a Living</span>
+			<h5>Andrew Aziz</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$49.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51UBTI294-L._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>How to Day Trade for a Living: A Beginner's Guide to Trading Tools and Tactics, Money Management, Discipline and Trading Psychology</span>
+			<h5>Andrew Aziz</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$89.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51W4teWhXjL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>The Subtle Art of Intraday Trading: A Handbook on How to Bank on Trading Psychology, Options Strategies and Make a Living out of Indian Stock Market even as Beginners</span>
+			<h5>Indrazith Shantharaj</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\61T-JNB8gKL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>Price Action Trading Secrets: Trading Strategies, Tools, and Techniques to Help You Become a Consistently Profitable Trader</span>
+			<h5>Rayner Teo</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$239.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\514yFXhkxEL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>How to Make Money With Breakout Trading: A Simple Stock Market Book for Beginners - The Secret of becoming Intelligent Investor - Price Action Trading through subconscious mind and the Power of Now</span>
+			<h5>Indrazith Shantharaj</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$190.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51J7S+y7AkL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>Bank Nifty Option Mastery | Your ultimate guide to profitable Option Buying Strategy</span>
+			<h5>Syamraj K</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\51+ZsUFyItL._AC_SY200_.jpg" alt="">
+		<div class="des">
+			<span>Money Making Skills by Warren Buffet: Money Making Skills by Warren Buffet: A Guide to Building Wealth (Warren Buffett Investment Strategy Book)</span>
+			<h5>Prabhat Prakashan</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$51.45</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	</div>
+	
+</section>
+<section id="newsletter" class="section-p1 section-m1">
+	<div class="newstext">
+		<h4>Sign Up For Newsletter</h4>
+		<p>Get E-mail updates about our latest shop and <span>special offer.</span></p>
+		
+	</div>
+	<div class="form">
+		<input type="text" placeholder="your email address">
+		<button class="normal">Sign Up</button>
+		
+	</div>
+	
+</section>
+
+
+<footer class="section-p1">
+	<div class="col">
+		<img src="C:\Users\Lenovo\Desktop\image\image.png11.png" width="90px">
+
+		<h4>Contact</h4>
+		<p><strong>Address: </strong>  All t-shirts & Accessoies</p>
+		<p><strong>Phone: </strong> +01 2222 365 /(+91) 01 2345 6789</p>
+		<p><strong>hours: </strong> 10:00 - 03:00, Mon - Sat</p>
+
+		<div class="follow">
+			<h4>Follow us</h4>
+			<div class="icon">
+				<i class='bx bxl-facebook'></i>
+				<i class='bx bxl-twitter'></i>
+				<i class='bx bxl-instagram'></i>
+				<i class='bx bxl-youtube'></i>
+				<i class='bx bxl-linkedin'></i>
+				
+			</div>
+			<br><br>
+			<div class="copyright">
+			<p>copyright 2024 - Html css Ecommerce website</p>
+		</div>
+			
+		</div>
+		</div>
+
+		<div class="col">
+			<h4>About</h4>
+			<a href="#">About us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy policy</a>
+			<a href="#">Terms & Conditions</a> 	
+			<a href="#">Contact Us</a>
+			
+		</div>
+
+			<div class="col">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Order</a> 	
+			<a href="#">Help</a>
+			
+		</div>
+
+		<div class="col-install">
+			<h4>App Install</h4>
+			<p>From App Store or Google Play</p>
+			<div class="row">
+				<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image-260nw-2022250442.png" width="100px"></a>
+				<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image-260nw-2022250443.png" width="100px"></a>
+				
+			</div>
+			<br>
+			<p>Secured Payment Geteways</p>
+			<br>
+			<img src="C:\Users\Lenovo\Desktop\image\pay.png" alt="">
+			
+			
+		</div>
+
+</footer>
+
+
+<script>
+	var MainImg = document.getElementById("MainImg");
+	var smallimg = document.getElementsByClassName("small-img");
+
+smallimg[0].onclick = function(){
+	MainImg.src = smallimg[0].src;
+}
+smallimg[1].onclick = function(){
+	MainImg.src = smallimg[1].src;
+}
+smallimg[2].onclick = function(){
+	MainImg.src = smallimg[2].src;
+}
+smallimg[3].onclick = function(){
+	MainImg.src = smallimg[3].src;
+}
+</script>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

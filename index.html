@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ecommerce Website</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<style>
+		
+		@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'spartan', sans-serif;
+}
+
+h1{
+	font-size: 50px;
+	line-height: 64px;
+	color: #222;
+}
+
+h2{
+	font-size: 46px;
+	line-height: 54px;
+	color: #222;
+}
+
+h4{
+	font-size: 20px;
+	color: #222;
+}
+
+h6{
+	font-weight: 700;
+	font-size: 12px;
+}
+
+p{
+	font-size: 16px;
+	color: #465b52;
+	margin: 15px 0 20px 0;
+}
+
+.section-p1{
+	padding: 40px 80px;
+}
+
+.section-m1{
+	margin: 40px 0;
+}
+
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+body{
+	width: 100%;
+}
+
+
+
+/* Header Start */
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #e3e6f3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.hover {
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+
+
+/* Home page */
+
+#hero{
+	
+	height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+}
+
+.section-container {
+            display: flex; /* Display children side by side */
+            align-items: center; /* Vertically align children */
+            padding: 20px; /* Add spacing around the section */
+        }
+
+        /* Style for the heading on the left */
+        .section-heading {
+            flex: 1; /* Take up as much space as possible */
+            padding: 10px; /* Add spacing around the heading */
+            font-size: 20px; /* Adjust the font size */
+            font-weight: ; /* Make the text bold */
+        }
+
+        /* Style for the photo on the right */
+        .section-photo {
+            flex: 1; /* Take up as much space as possible */
+            padding: 10px; /* Add spacing around the photo */
+        }
+
+        /* Style for the image (optional) */
+        .section-photo img {
+            max-width: 120%; /* Ensure the image doesn't exceed its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing around the image */
+        }
+
+*{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'work sans', sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+            background: hidden;
+        }
+
+        section{
+            padding: 80px 13% 70px;
+        }
+
+        #hero h4{
+        	padding-bottom: 15px;
+
+        }
+
+        #hero h1{
+        	color: #088178;
+        }
+
+      /* Style the button */
+.styled-button {
+    
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+/* Change button color on hover */
+.styled-button:hover {
+    background-color: orange;
+}
+
+#feature{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#feature .fe-box{
+	width: 180px;
+	text-align: center;
+	padding: 25px 15px;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+	border: 1px solid #cce7d0;
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+#feature .fe-box{
+	box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+	display: inline-block;
+	padding: 9px 8px 6px 8px;
+	line-height: 1;
+	border-radius: 4px;
+	color: #088178;
+	background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6{
+background-color: #fff2e5;
+}
+
+#product1{
+	text-align: center;
+}
+
+#product1 .pro-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+
+#product1 .pro{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #cce7d0;
+	border-radius: 25px;
+   cursor: pointer;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+   margin: 15px 0;
+   position: relative;
+}
+
+#product1 .pro:hover{
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);	
+}
+
+#product1 .pro img{
+	width: 100%;
+	border-radius: 20px;
+
+}
+
+#product1 .pro .des{
+	text-align: start;
+	padding: 10px 0;
+}
+
+#product1 .pro .des span{
+	color: #606063;
+	font-size: 12px;
+}
+
+#product1 .pro .des h5{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+
+#product1 .pro .des i{
+	font-size: 12px;
+	color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+	padding-top: 7px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #088178;
+}
+
+#product1 .pro .cart{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #e8f6ea;
+	font-weight: 500;
+	color: #088178;
+	border: 1px solid #cce7d0;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+
+
+
+
+.cta{
+          margin: 200px auto;
+          width: 90%;
+          background-color: skyblue;
+          background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(C:\Users\lenovo\Pictures\insurance-quote-form-background-fontana-ca.jpg);
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          text-align: center;
+          padding: 100px 0;
+       }
+
+       .cta h4{
+       	color: #fff;
+       }
+       .cta h2 {
+        color: #fff;
+        margin-bottom: 40px;
+        padding: 0;
+       }
+
+       .cta button:hover{
+       	background: #088178;
+       	color: #fff;
+       }
+
+       .offer{
+       	background: radial-gradient(#fff,#ffd6d6);
+       	margin-top: 80px;
+       	padding: 30px 0;
+       }
+
+
+ #colored-section {
+        background-color: lightgray;
+        height: 90%;
+    }
+
+
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #e3e6f3;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.hover {
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+
+
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	background-color: #041e42;
+}
+
+#newsletter h4{
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+}
+
+#newsletter p{
+	font-size: 14px;
+	font-weight: 600;
+	color: #818ea0;
+}
+
+#newsletter p span{
+	color: #ffbd27;
+}
+
+#newsletter .form{
+	display: flex;
+	width: 40%;
+}
+
+#newsletter input{
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#newsletter button{
+	background-color: #088178;
+	color: #fff;
+	white-space: nowrap;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+footer .logo{
+	margin-bottom: 30px;
+}
+
+footer h4{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+footer p{
+	font-size: 13px;
+	margin: 0 0 8px 0;
+}
+
+footer a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+footer .follow{
+	margin-top: 20px;
+}
+
+footer .follow i{
+	color: #465b52;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+footer .install .row img{
+	border: 1px solid #088178;
+	border-radius: 6px;
+}
+       
+
+
+/* shop page */
+
+
+
+
+/* single product */
+
+
+
+
+/* Blog page */
+
+
+
+/* About */
+
+
+/*contact page*/
+
+
+
+/*cart*/
+
+
+/*start Media Query*/
+
+
+
+	</style>
+</head>
+<body>
+
+	<section id="header">
+		<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image.png11.png" width="100px" class="logo" alt=""></a>
+
+		<div>
+			<ul id="navbar">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+				
+				
+			</ul>
+		</div>
+		
+		
+	</section>
+
+
+
+<section id="hero">
+	<div class="section-container">
+        <div class="section-heading">
+              <h4>Trade-in-offer</h4>
+         	<h2>Super value deals</h2>
+		<h1>On all products</h1>
+
+		<p>save more with coupans & up to 70% off!</p>
+           <button class="styled-button"><a href="project.html">Go to Dashboard</a></button>  
+        </div>
+        <div class="section-photo">
+        	<br><br>
+            <img src="C:\Users\Lenovo\Desktop\image\712+lS1mk-L.jpg" width="100%">
+        </div>
+    </div>
+</section>
+
+
+<br><br><br><br>
+<br><br><br><br>
+
+<section id="feature" class="section-p1">
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\download.jpeg" alt="" width="150px">
+		<h6>Free Shipping</h6>
+		
+	</div>
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\images (1).png" alt="" width="150px">
+		<h6>online order</h6>
+		
+	</div>
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\images.jpeg" alt="" width="150px">
+		<h6>Save Money</h6>
+		
+	</div>
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\images.png" alt="" width="150px">
+		<h6>Promotions</h6>
+		
+	</div>
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\images (1).jpeg" alt="" width="150px">
+		<h6>Happy sell</h6>
+		
+	</div>
+	<div class="fe-box">
+		<img src="C:\Users\Lenovo\Desktop\image\images (2).png" alt="" width="150px">
+		<h6>F24/7 Support</h6>
+		
+	</div>
+	
+</section>
+
+<section id="product1" class="section-p1">
+	<h2>Featured Products</h2>
+	<p>Summer Collection new Morden Design</p>
+	<div class="pro-container">
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\images (2).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+		<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\image.png8.jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\download (1).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\download (2).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\download (3).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\images (4).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\images (3).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\s-fgds-try-this-original-imaghev97nvyexgx.webp" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-shirts</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	</div>
+	
+</section>
+
+
+<sectiopn>
+ <img alt="Great Indian Festival" src="C:\Users\Lenovo\Desktop\image\Train_GW_editorial_2300x646._CB575880778_.jpg" height="40%" width="1350px" data-a-hires="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/PC_HERO_NTA_BOE_TMR_2X_EN._CB574639543_.jpg">
+    
+  
+
+</section>
+
+
+<section id="product1" class="section-p1">
+	<h2>Arrivals</h2>
+	<p>Winter Shoes Collection new Morden Design</p>
+	<div class="pro-container">
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (13).jpeg" alt="" width="600px"> 
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$40</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+		<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (12).jpeg" alt="" width="600px">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (11).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$78</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (12).jpeg" alt="" width="600px">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$59</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (13).jpeg" alt="" width="600px">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$62</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (14).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$58</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (15).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$66</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (17).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>shoes</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$66</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	</div>
+	
+</section>
+
+  <div id="colored-section">
+        <!-- Your content goes here -->
+
+<section id="hero">	
+     
+<div class="section-container">
+        <div class="section-heading">
+              <h4>Exclusively Available</h4>
+         	<h2>Super value deals</h2>
+		<h1>Smart Band 4</h1>
+
+		<p>The Mi Smart Band 4 features a 70% larger (than Mi Band 3) Amoled color full-touch display with adjustable brightness, so eveything is clear as can be.</p>
+
+		<button class="styled-button"><a href="#">Explore More</a></button>
+           
+        </div>
+        <div class="section-photo">
+        	<br><br>
+          <img src="C:\Users\Lenovo\Desktop\image\download (9).jpeg" width="450px">
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section id="product1" class="section-p1">
+	<h2>Featured Products</h2>
+	<p>More digital items to explore</p>
+	<div class="pro-container">
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\91pRZZx65YL._AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>Jack (German Edition)</span>
+			<h5>Theodor Däubler</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$0.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+		<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71WJ4gNj-vL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_ (1).jpg" alt="">
+		<div class="des">
+			<span>Day Trading for a Living</span>
+			<h5>Andrew Aziz</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71WJ4gNj-vL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_ (1).jpg" alt="">
+		<div class="des">
+			<span>How to Day Trade for a Living: A Beginner's Guide to Trading Tools and Tactics, Money Management, Discipline and Trading Psychology</span>
+			<h5>Andrew Aziz</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71wv+jzgVjL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>The Subtle Art of Intraday Trading: A Handbook on How to Bank on Trading Psychology, Options Strategies and Make a Living out of Indian Stock Market even as Beginners</span>
+			<h5>Indrazith Shantharaj</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71O0jzum7EL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>Price Action Trading Secrets: Trading Strategies, Tools, and Techniques to Help You Become a Consistently Profitable Trader</span>
+			<h5>Rayner Teo</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$239.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71wv+jzgVjL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>How to Make Money With Breakout Trading: A Simple Stock Market Book for Beginners - The Secret of becoming Intelligent Investor - Price Action Trading through subconscious mind and the Power of Now</span>
+			<h5>Indrazith Shantharaj</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$190.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\71TieNrUgsL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>Bank Nifty Option Mastery | Your ultimate guide to profitable Option Buying Strategy</span>
+			<h5>Syamraj K</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$99.00</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro" onclick="window.location.href='sproduct1.html';">
+		<img src="C:\Users\Lenovo\Desktop\image\61nPOooFaML._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL160_SR160,160_.jpg" alt="">
+		<div class="des">
+			<span>Money Making Skills by Warren Buffet: Money Making Skills by Warren Buffet: A Guide to Building Wealth (Warren Buffett Investment Strategy Book)</span>
+			<h5>Prabhat Prakashan</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$51.45</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	</div>
+	
+</section>
+
+
+  <section>
+  	<font size="5%"><p align="left"><h3>Starting ₹799 | Bestselling smartwatches from top brands</h3></p></font>
+
+ <div class="image-container"  onclick="window.location.href='watch.html';">
+        <img src="C:\Users\Lenovo\Desktop\image\61AHiYyu3ZL._AC_SY200_.jpg" alt="Image 1">
+        <img src="C:\Users\Lenovo\Desktop\image\61BY9Mhhj2L._AC_SY200_.jpg" alt="Image 2">
+        <img src="C:\Users\Lenovo\Desktop\image\61S9QZf9wqL._AC_SY200_.jpg" alt="Image 4">
+        <img src="C:\Users\Lenovo\Desktop\image\61TXR+7EpUL._AC_SY200_.jpg" alt="Image 5">
+        <img src="C:\Users\Lenovo\Desktop\image\61y2VVWcGBL._AC_SY200_.jpg" alt="Image 6">
+        <img src="C:\Users\Lenovo\Desktop\image\61yhPPcmesL._AC_SY200_.jpg" alt="Image 7">
+        <img src="C:\Users\Lenovo\Desktop\image\612wtQLapiL._AC_SY200_.jpg" alt="Image 8">
+        
+    </div>
+
+</section>
+
+
+<section id="product1" class="section-p1">
+	<h2>New Arrivals</h2>
+	<p>Winter Collection new Morden Design</p>
+	<div class="pro-container">
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (7).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-sweater</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+		<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (6).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-sweater</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (6).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-sweater</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (5).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-sweater</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (7).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-hoodi</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\download (8).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-hoodi</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (8).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-hoodi</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	<div class="pro">
+		<img src="C:\Users\Lenovo\Desktop\image\images (9).jpeg" alt="">
+		<div class="des">
+			<span>adidas</span>
+			<h5>Cartoon Astronaut-hoodi</h5>
+			<div class="star">
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+				<i class='bx bx-star'></i>
+			</div>
+			<h4>$88</h4>
+			
+		</div>
+		<a href=""><i class='bx bx-cart cart' ></i></a>
+
+		
+	</div> 
+	</div>
+	
+</section>
+
+
+ <section>
+  	<font size="5%"><p align="left"><h3>Starting 399 | Neckbands & Earbuds | Amazon Brands & more</h3></p></font>
+
+ <div class="image-container" onclick="window.location.href='sproduct.html';">
+        <img src="C:\Users\Lenovo\Desktop\image\51+ZsUFyItL._AC_SY200_.jpg" alt="Image 1">
+        <img src="C:\Users\Lenovo\Desktop\image\51nRSOvjSLL._AC_SY200_.jpg" alt="Image 2">
+        <img src="C:\Users\Lenovo\Desktop\image\51OknQVVTeL._AC_SY200_.jpg" alt="Image 4">
+        <img src="C:\Users\Lenovo\Desktop\image\51JlSIZ7i8L._AC_SY200_.jpg" alt="Image 5">
+        <img src="C:\Users\Lenovo\Desktop\image\51UBTI294-L._AC_SY200_.jpg" alt="Image 6">
+        <img src="C:\Users\Lenovo\Desktop\image\61T-JNB8gKL._AC_SY200_.jpg" alt="Image 7">
+        <img src="C:\Users\Lenovo\Desktop\image\514yFXhkxEL._AC_SY200_.jpg" alt="Image 8">
+        
+    </div>
+
+</section>
+
+
+
+  <div id="colored-section">
+        <!-- Your content goes here --> 
+
+<section id="hero">
+	  
+<div class="section-container">
+        <div class="section-heading">
+              <h4>Crazy deals</h4>
+         	<h2>buy 1 get 1 free</h2>
+		
+
+		<p>The best classic dress is on sale at cara</p>
+           <button class="styled-button"><a href="project.html">Learn More</a></button>  
+        </div>
+        <div class="section-photo">
+        	<br><br>
+            <img src="C:\Users\Lenovo\Desktop\image\b10.jpg" width="120%">
+        </div>
+    </div>
+</div>
+</section>
+<br><br>
+
+
+
+
+<section id="newsletter" class="section-p1 section-m1">
+	<div class="newstext">
+		<h4>Sign Up For Newsletter</h4>
+		<p>Get E-mail updates about our latest shop and <span>special offer.</span></p>
+		
+	</div>
+	<div class="form">
+		<input type="text" placeholder="your email address">
+		<button class="normal">Sign Up</button>
+		
+	</div>
+	
+</section>
+
+
+<footer class="section-p1">
+	<div class="col">
+		<img src="C:\Users\Lenovo\Desktop\image\image.png11.png" width="90px">
+
+		<h4>Contact</h4>
+		<p><strong>Address: </strong>  All t-shirts & Accessoies</p>
+		<p><strong>Phone: </strong> +01 2222 365 /(+91) 01 2345 6789</p>
+		<p><strong>hours: </strong> 10:00 - 010:00, Mon - Sat</p>
+
+		<div class="follow">
+			<h4>Follow us</h4>
+			<div class="icon">
+				<i class='bx bxl-facebook'></i>
+				<i class='bx bxl-twitter'></i>
+				<i class='bx bxl-instagram'></i>
+				<i class='bx bxl-youtube'></i>
+				<i class='bx bxl-linkedin'></i>
+				
+			</div>
+			<br><br>
+			<div class="copyright">
+			<p>copyright 2024 - Html css Ecommerce website</p>
+		</div>
+			
+		</div>
+		</div>
+
+		<div class="col">
+			<h4>About</h4>
+			<a href="#">About us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy policy</a>
+			<a href="#">Terms & Conditions</a> 	
+			<a href="#">Contact Us</a>
+			
+		</div>
+
+			<div class="col">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Order</a> 	
+			<a href="#">Help</a>
+			
+		</div>
+
+		<div class="col-install">
+			<h4>App Install</h4>
+			<p>From App Store or Google Play</p>
+			<div class="row">
+				<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image-260nw-2022250442.png" width="100px"></a>
+				<a href="#"><img src="C:\Users\Lenovo\Desktop\image\image-260nw-2022250443.png" width="100px"></a>
+				
+			</div>
+			<br>
+			<p>Secured Payment Geteways</p>
+			<br>
+			<img src="C:\Users\Lenovo\Desktop\image\pay.png" alt="">
+			
+		</div>
+
+
+		
+		
+</footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
